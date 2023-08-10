@@ -8,6 +8,8 @@ import NotFound from '../pages/NotFound';
 import ROUTE_CONSTANTS from '../constants/ROUTE_CONSTANTS';
 import GeneralLayout from '../layouts/GeneralLayout';
 import Tracker from '../pages/Tracker';
+import Home from '../pages/Home';
+import Projects from '../pages/Projects';
 
 function Routes() {
 
@@ -17,6 +19,8 @@ function Routes() {
                 <Route path={ROUTE_CONSTANTS.ROOT.ABSOLUTE} element={<GeneralLayout />}>
                     <Route path={ROUTE_CONSTANTS.ROOT_STAR.ABSOLUTE} element={<NotFound />} />
                     <Route path={ROUTE_CONSTANTS.TRACKER.ABSOLUTE} element={<Tracker />} />
+                    <Route path={ROUTE_CONSTANTS.HOME.ABSOLUTE} element={<Home />} />
+                    <Route path={ROUTE_CONSTANTS.PROJECT.ABSOLUTE} element={<Projects />} />
                 </Route>
             </RoutesWrapper>
         </Router >
