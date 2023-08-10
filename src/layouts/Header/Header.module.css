@@ -1,0 +1,54 @@
+@import '../../styles/variables.css'; 
+
+.header {
+    border-bottom: 1px solid #C6D2D9!important;
+  position: fixed;
+  z-index: 5;
+  box-shadow: 0 5px 10px #0000001a;
+  top: 0;
+  transform: translateY(0);
+  transition: width 0.3s ease;
+  right: 0;
+  left: 0;
+  min-height: 50px;
+  padding: 0 1.4286rem 0 0;
+  background: var(--header-background-color);
+  will-change: transform;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.logo {
+  width: 100px;
+  width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.nav {
+  display: flex;
+  gap: var(--space-s); 
+}
+
+.nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: var(--font-size-base);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+ 
+  
+}
