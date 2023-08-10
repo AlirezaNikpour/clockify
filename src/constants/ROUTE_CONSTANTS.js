@@ -15,6 +15,14 @@ const ROUTE_CONSTANTS = {
             ABSOLUTE: "/user/setting"
         },
     },
+    PROJECT: {
+        RELATIVE: "projects",
+        ABSOLUTE: "/projects",
+    },
+    HOME: {
+        RELATIVE: "/",
+        ABSOLUTE: "/",
+    },
     TRACKER: {
         RELATIVE: "tracker",
         ABSOLUTE: "/tracker",
