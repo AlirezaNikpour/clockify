@@ -1,0 +1,26 @@
+:root {
+    /* Colors */
+    --primary-color: #03a9f4;
+    --secondary-color: #f47727;
+    --accent-color: #ffc107;
+    --background-color: #f4f4f4;
+    --header-background-color: #fefefe;
+    --text-color: #333333;
+    --text-white: #fefefe;
+    
+    /* Typography */
+    --font-family: 'Helvetica Neue', sans-serif;
+    --font-size-base: 16px;
+    --font-size-large: 20px;
+    --font-size-small: 14px;
+  
+    /* Spacing */
+    --space-unit: 8px;
+    --space-xs: var(--space-unit);
+    --space-s: calc(2 * var(--space-unit));
+    --space-m: calc(3 * var(--space-unit));
+    --space-l: calc(4 * var(--space-unit));
+    --space-xl: calc(5 * var(--space-unit));
+    --space-xxl: calc(6 * var(--space-unit));
+  }
+  
