@@ -1,0 +1,13 @@
+.outlet {
+    padding-top: 50px;
+}
+.layout {
+    display: flex;
+}
+.main {
+    margin-left: 200px;
+    transition: margin .3s ease;
+    width: 100%;
+    min-width: 1px;
+    margin-top: 50px;
+}
