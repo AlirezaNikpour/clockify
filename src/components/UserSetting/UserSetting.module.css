@@ -1,0 +1,22 @@
+.wrapper {
+    display: flex;
+    margin: 0 1.4286rem;
+    color: var(--text-white);
+    font-size: var(--font-size-base);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    min-width: 32px;
+    background: var(--accent-color)!important;
+    height: 32px;
+    text-transform: uppercase;
+    align-items: center;
+}
+.wrapper:before {
+    content: "";
+    display: inline-block;
+    min-width: 1px;
+    padding: 1.4286rem 0;
+    margin: 0 1.4286rem 0 -1.4286rem;
+    background: url(../../assets/img/separator-pattern.png) left top repeat-y;
+}
