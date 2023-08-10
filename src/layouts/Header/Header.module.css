@@ -1,10 +1,9 @@
 @import '../../styles/variables.css'; 
 
 .header {
-    border-bottom: 1px solid #C6D2D9!important;
+  border-bottom: 1px solid #C6D2D9!important;
   position: fixed;
   z-index: 5;
-  box-shadow: 0 5px 10px #0000001a;
   top: 0;
   transform: translateY(0);
   transition: width 0.3s ease;
@@ -48,7 +47,4 @@
   align-items: center;
 }
 
-.user-name {
- 
-  
-}
+
