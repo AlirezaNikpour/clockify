@@ -1,0 +1,71 @@
+@import url(../../styles/variables.css);
+aside {
+    transition: width .3s ease;
+    position: fixed;
+    z-index: 4;
+    float: left;
+    min-height: 100vh;
+    background: #fefefe;
+    box-shadow: 1px 0 #c6d2d9;
+    width: 197px;
+    border-left: 0.2857rem solid #607D8B;
+    border-left-color: #03a9f4;
+}
+.header {
+    height: 40px;
+    padding-bottom: 5px;
+    padding-left: var(--space-m);
+    align-items: flex-end;
+        position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 50px;
+    text-transform: uppercase;
+        color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: var(--font-size-s);
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.wrapper > ul {
+    padding-left: 0;
+}
+.item {
+    position: relative;
+    transition: border-color .2s ease;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.item > a > div {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.item > a {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    height: 32px;
+    transition: margin .3s ease;
+    margin: 0 0.35715rem 0 1.1429rem;
+}
