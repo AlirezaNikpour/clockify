@@ -1,0 +1,175 @@
+@import url(../../styles/variables.css);
+
+.dot {
+    display: inline-block;
+    margin-right: 0.7143rem;
+    width: 8px;
+    height: 8px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.td {
+    font-weight: 400;
+    vertical-align: middle;
+    transition: width .2s ease-in-out,min-width .2s ease-in-out,padding-top .2s ease-in-out,padding-bottom .2s ease-in-out;
+    border-bottom: 1px solid #C6D2D9;
+    border-top: 0px;
+    padding: 0.7143rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    -webkit-transition: width .2s ease-in-out,min-width .2s ease-in-out,padding-top .2s ease-in-out,padding-bottom .2s ease-in-out;
+    -moz-transition: width .2s ease-in-out,min-width .2s ease-in-out,padding-top .2s ease-in-out,padding-bottom .2s ease-in-out;
+    -ms-transition: width .2s ease-in-out,min-width .2s ease-in-out,padding-top .2s ease-in-out,padding-bottom .2s ease-in-out;
+    -o-transition: width .2s ease-in-out,min-width .2s ease-in-out,padding-top .2s ease-in-out,padding-bottom .2s ease-in-out;
+}
+
+.pause{
+    cursor: pointer;
+    text-transform: uppercase;
+    min-width: 7.143rem;
+    color: #fefefe;
+    background-color: #f44336;
+    border-color: #f44336;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--space-xs) var(--space-m);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.active{
+    border: solid 0.2px green;
+    background-color: #0080001a;
+}
+.activeRecord {
+    background-color: #0579051c;
+}
+.range{
+    display: flex;
+    gap: 15px;
+}
+.td:last-child{
+    border-left: unset!important;
+    border-right: 1px solid #C6D2D9!important;
+}
+.td:first-child{
+    border-left: 1px solid #C6D2D9!important;
+    border-right: unset!important;
+}
+.th {
+    border: 1px solid #C6D2D9;
+    padding: 0.7143rem;
+    border-top: 0px;
+    border-right: unset;
+    width: 100%;
+    border-left: unset;
+}
+.th:last-child{
+    border-right: 1px solid #C6D2D9;
+}
+.th:first-child{
+    border-left: 1px solid #C6D2D9;
+}
+.th > div {
+    display: flex;
+    align-items: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.control-label{
+    display: none;
+    position: relative;
+    min-height: 1.5rem;
+    font-size: 14px;
+}
+
+.td > div >div{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+.tr {
+    width: 100%;
+    display: flex;
+}
+.td > div {
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+}
+td {
+    vertical-align: middle;
+}
+.headline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid #C6D2D9;
+    padding: 0 1.4286rem;
+    margin-bottom: 0;
+    font-size: var(--font-size-s);
+    color: #999;
+    background-color: #e4eaee;
+    min-height: 40px;
+    justify-content: center;
+}
+
+.t-heading {
+    align-items: center!important;
+    display: flex!important;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .8571rem;
+    font-weight: 400;
+}
+.t-heading > div {
+    position: relative;
+    display: block;
+    min-height: 1.5rem;
+}
+.t-heading > div:last-child {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .8571rem;
+    font-weight: 400;
+}
+.entries-badge:hover {
+    background: #B3E5FC;
+}
+.entries-badge {
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 2px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    margin: 0 0.7143rem;
+    width: 1.643rem;
+    height: 1.643rem;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: .8571rem;
+    color: #02587f;
+    background: #E1F5FE;
+}

@@ -1,0 +1,241 @@
+@import url(../../../styles/variables.css);
+
+
+.pause{
+    cursor: pointer;
+    text-transform: uppercase;
+    min-width:  var(--space-m);
+    color: #fefefe;
+    background-color: #f44336;
+    border-color: #f44336;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.3rem var(--space-s);
+    margin-right:1rem ;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.recorder-container {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0 20px #0000001a;
+    transition: width .3s ease,transform .3s ease;
+    transform: translateY(70px);
+    width: calc(100% - 65px - 9.8572rem);
+}
+@media only screen and (min-width: 992px) {
+    .recorder-container {
+        transform: translateY(90px);
+        width: calc(100% - 197px - 2.8572rem);
+    }
+}
+.header {
+    display: flex;
+    margin-bottom: 2.8572rem;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+      
+}
+
+.row {
+    display: flex;
+    min-height: 4.2858rem;
+    align-items: center;
+    transition: border-bottom .2s ease-in-out;
+}
+@media only screen and (max-width: 992px) {
+    .row {
+        flex-direction: column;
+    }
+}
+.form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+    align-items: center;
+    padding-top: 0.7143rem;
+    padding-bottom: 0.7143rem;
+    width: 100%;
+}
+
+.tracker-input {
+    border-color: transparent;
+    margin: 0;
+    min-height: 40px;
+    box-shadow: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+    height: calc(2.716rem + 2px);
+    padding: 0.608rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fefefe;
+    background-clip: padding-box;
+    border-radius: 2px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.tracker-input:hover {
+    border: 1px solid #C6D2D9;
+}
+
+.form {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    margin-left: 0.7143rem;
+    position: relative;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col {
+    display: flex;
+    min-height: 4.2858rem;
+    align-items: center;
+    transition: border-bottom .2s ease-in-out;
+    width: 100%;
+}
+.project-picker--label {
+    color: var(--primary-color);
+    display: flex;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 1.4286rem;
+    gap: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.tracker-entry-actions {
+    border: none;
+    width: 100%;
+    position: relative;
+    padding: 0.7143rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.time-picker {
+    width: 100%;
+    display: flex;
+    padding:  0 1rem;
+}
+.time-picker > div {
+    display: inline-flex;
+    align-items: center;
+}
+
+.input-time-picker {
+    text-align: center;
+    width: 53px;
+    padding-left: 6px;
+    padding-right: 6px;
+    /* border: 1px solid transparent; */
+    border: 1px solid #C6D2D9;
+}
+
+.calender-wrapper {
+    font-family: Roboto,sans-serif;
+    box-shadow: 0 5px 10px #0000001a;
+    position: absolute;
+    color: inherit;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 278px;
+    max-width: none;
+    padding: 0;
+    margin-top: 7px;
+    top: 25px;
+    font-size: 15px;
+    line-height: 1em;
+}
+
+
+.input-time-picker:hover {
+    border: 1px solid #C6D2D9;
+}
+
+.line-divider:before {
+    content: "-";
+    padding: 0 0.35715rem;
+    color: #999; 
+}
+
+.date-picker {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 1.07145rem;
+    width: 100%;
+    justify-content: center;
+    margin-top: -5px;
+    position: relative;
+}
+
+.duration {
+
+}
+
+.time-picker-sum {
+    min-height: 40px;
+    box-shadow: none;
+    border: 1px solid transparent;
+    width: 92px;
+    text-align: center;
+    height: auto;
+    padding: 0;
+    font-size: 1.286rem;
+    font-weight: 500;
+    color: #333;
+    white-space: pre;
+    margin: 0;
+    background: transparent;
+    border-radius: 2px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    line-height: 1.5;
+}
+
+.time-picker-sum:hover {
+    border: 1px solid #C6D2D9;
+}
+
+.add-task {
+    width: 100%;
+    display: flex;
+    padding: 0 1rem 0 0;
+    justify-self: end;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.add-task > div {
+    color: var(--text-white);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    font-size: .8571rem;
+    line-height: 1.4;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.date-picker > img{
+    cursor: pointer;
+}

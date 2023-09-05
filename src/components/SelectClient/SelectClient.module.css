@@ -1,0 +1,102 @@
+.dropdown-menu {
+    width: 360px;
+    min-width: 360px;
+    max-width: 463px;
+    z-index: 1031;
+    box-shadow: 0 5px 10px #0000001a;
+    border: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+    list-style: none;
+    background-color: #fefefe;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 2px;
+}
+
+
+@media (min-width: 992px) {
+    .dropdown-menu {
+        width: 360px;
+        max-width: none;
+    }
+}
+
+.dropdown-menu-header {
+        display: flex;
+    align-items: center;
+    min-height: 4.2858rem;
+    padding: 0 0.7143rem;
+    white-space: nowrap;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+.input-group > input{
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+    margin: 0;
+    min-height: 40px;
+    box-shadow: none;
+    padding-right: 2.1429rem;
+    display: block;
+    width: 100%;
+    height: calc(2.716rem + 2px);
+    padding: 0.608rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fefefe;
+    background-clip: padding-box;
+    border: 1px solid #C6D2D9;
+    border-radius: 2px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -moz-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -ms-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.scroll-viewport{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.scroll-items {
+    max-width: 360px; 
+    display: inline-block;
+    min-width: 100%;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.678rem 1.4286rem;
+    clear: both;
+    font-weight: 400;
+    color: #666;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}

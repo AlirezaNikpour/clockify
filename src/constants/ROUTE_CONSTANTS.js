@@ -19,13 +19,21 @@ const ROUTE_CONSTANTS = {
         RELATIVE: "projects",
         ABSOLUTE: "/projects",
     },
+    REPORT: {
+        RELATIVE: "reports",
+        ABSOLUTE: "/reports",
+    },
+    CLIENT: {
+        RELATIVE: "clients",
+        ABSOLUTE: "/clients",
+    },
     HOME: {
         RELATIVE: "/",
         ABSOLUTE: "/",
     },
     TRACKER: {
-        RELATIVE: "tracker",
-        ABSOLUTE: "/tracker",
+        RELATIVE: "time-tracker",
+        ABSOLUTE: "/time-tracker",
     },
 };
 

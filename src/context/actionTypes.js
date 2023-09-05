@@ -1,2 +1,11 @@
 export const ADD_PROJECT = 'ADD_PROJECT';
 export const REMOVE_PROJECT = 'REMOVE_PROJECT';
+export const LOAD_PROJECTS = 'LOAD_PROJECTS';
+export const ADD_TASK = 'ADD_TASK';
+export const ACTIVE_TASK = 'ACTIVE_TASK';
+export const PAUSE_TASK = 'PAUSE_TASK';
+export const LOAD_TASKS = 'LOAD_TASKS';
+export const ADD_RECORD = 'ADD_RECORD';
+export const ADD_CLIENT = 'ADD_CLIENT';
+export const REMOVE_CLIENT = 'REMOVE_CLIENT';
+export const LOAD_CLIENTS = "LOAD_CLIENTS";

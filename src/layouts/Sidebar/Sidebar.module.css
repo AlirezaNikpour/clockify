@@ -46,6 +46,28 @@ aside {
     margin-bottom: 0;
     list-style: none;
 }
+.item::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 50px;
+    background: #E4EAEE;
+    transition: width .2s ease;
+    z-index: -1111;
+    width: 0;
+}
+.item:hover::before {
+    width: 100%;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 50px;
+    background: #E4EAEE;
+    transition: width .2s ease;
+    z-index: -1111;
+}
 .item > a > div {
     white-space: nowrap;
     text-overflow: ellipsis;

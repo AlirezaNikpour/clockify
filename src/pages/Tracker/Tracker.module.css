@@ -1,0 +1,17 @@
+@media only screen and (min-width: 1366px){
+    .main {
+        transform: translateY(2.8572rem);
+        -webkit-transform: translateY(2.8572rem);
+        -moz-transform: translateY(2.8572rem);
+        -ms-transform: translateY(2.8572rem);
+        -o-transform: translateY(2.8572rem);
+}
+}
+@media only screen and (min-width: 992px){
+    .main {
+        transform: translateY(5.7144rem);
+    }
+}
+.main {
+    transform: translateY(7.143rem);
+}

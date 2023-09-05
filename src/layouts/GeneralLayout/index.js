@@ -4,17 +4,27 @@ import styles from './GeneralLayout.module.css'
 import Header from "../Header";
 import Sidebar from "../Sidebar";
 import ProjectsProvider from "../../context/ProjectsContext";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import { TaskProvider } from "../../context/TaskContext";
+import ClientsProvider from "../../context/ClientContext";
+
 const GeneralLayout = () => {
     return <>
         <div className={styles.outlet}>
             <Header />
             <div className={styles.layout}>
-                <ProjectsProvider>
-                    <Sidebar />
-                    <div className={styles.main}>
-                        <Outlet />
-                    </div>
-                </ProjectsProvider>
+                <ClientsProvider>
+                    <ProjectsProvider>
+                        <TaskProvider>
+                            <Sidebar />
+                            <div className={styles.main}>
+                                <Outlet />
+                                <ToastContainer />
+                            </div>
+                        </TaskProvider>
+                    </ProjectsProvider>
+                </ClientsProvider>
             </div>
         </div>
     </>

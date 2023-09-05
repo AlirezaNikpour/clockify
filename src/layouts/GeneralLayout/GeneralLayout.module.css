@@ -11,3 +11,11 @@
     min-width: 1px;
     margin-top: 50px;
 }
+@media (min-width: 992px){
+.main {
+    padding: 2.8572rem 0.7143rem;
+}
+}
+.main {
+    padding: 1.4286rem 0.7143rem;
+}

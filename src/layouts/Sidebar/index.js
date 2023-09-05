@@ -5,6 +5,7 @@ import timesheetsvg from '../../assets/img/timesheet.svg'
 import timetrackersvg from '../../assets/img/time-tracker.svg'
 import calendarsvg from '../../assets/img/calendar.svg'
 import Projectssvg from '../../assets/img/projects.svg'
+import Clientsssvg from '../../assets/img/clients.svg'
 function Sidebar() {
     return (
         <aside>
@@ -29,7 +30,18 @@ function Sidebar() {
                         </Link>
                     </li>
                 </ul>
-                <div class={styles.header}>
+                <div className={styles.header}>
+                    <span>ANALYZE</span>
+                </div>
+                <ul>
+                    <li className={styles.item}>
+                        <Link to='/reports' >
+                            <span className={styles.icon}><img src={Projectssvg} alt='Reports' /></span>
+                            <div>Reports</div>
+                        </Link>
+                    </li>
+                </ul>
+                <div className={styles.header}>
                     <span>Manage</span>
                 </div>
                 <ul>
@@ -37,6 +49,12 @@ function Sidebar() {
                         <Link to='/projects' >
                             <span className={styles.icon}><img src={Projectssvg} alt='Projects' /></span>
                             <div>Projects</div>
+                        </Link>
+                    </li>
+                    <li className={styles.item}>
+                        <Link to='/clients' >
+                            <span className={styles.icon}><img src={Clientsssvg} alt='clients' /></span>
+                            <div>Clients</div>
                         </Link>
                     </li>
                 </ul>

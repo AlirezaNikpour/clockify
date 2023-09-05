@@ -1,0 +1,132 @@
+@import url(../../styles/variables.css);
+.dot {
+    display: inline-block;
+    margin-right: 0.7143rem;
+    width: 8px;
+    height: 8px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.delete{
+    color: var(--red-color);
+    cursor: pointer;
+    font-size: var(--font-size-s);
+}
+.delete:hover{
+    font-weight: 500;
+    transition: width .5s ease,transform .3s ease;
+    font-size: var(--font-size-s);
+    -webkit-transition: width .5s ease,transform .3s ease;
+    -moz-transition: width .5s ease,transform .3s ease;
+    -ms-transition: width .5s ease,transform .3s ease;
+    -o-transition: width .5s ease,transform .3s ease;
+}
+
+.td {
+    font-weight: 400;
+    vertical-align: middle;
+    transition: width .2s ease-in-out,min-width .2s ease-in-out,padding-top .2s ease-in-out,padding-bottom .2s ease-in-out;
+    border-bottom: 1px solid #C6D2D9;
+    border-top: 0px;
+    padding: 0.7143rem;
+    width: 100%;
+}
+.td:last-child{
+    border-left: unset!important;
+    border-right: 1px solid #C6D2D9!important;
+}
+.td:first-child{
+    border-left: 1px solid #C6D2D9!important;
+    border-right: unset!important;
+}
+.th {
+    border: 1px solid #C6D2D9;
+    padding: 0.7143rem;
+    border-top: 0px;
+    border-right: unset;
+    width: 100%;
+    border-left: unset;
+}
+.th:last-child{
+    border-right: 1px solid #C6D2D9;
+}
+.th:first-child{
+    border-left: 1px solid #C6D2D9;
+}
+.th > div {
+    display: flex;
+    align-items: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.control-label{
+    display: none;
+    position: relative;
+    min-height: 1.5rem;
+    padding-left: 1.643rem;
+    font-size: 14px;
+}
+
+.td > div >div{
+    flex: 1;
+    display: flex;
+    min-width: 0;
+        width: 100%!important;
+padding-right: 1.4286rem!important;
+}
+.tr {
+    width: 100%;
+    display: flex;
+}
+.td > div {
+    display: flex;
+    align-items: center;
+}
+td {
+    vertical-align: middle;
+}
+.headline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid #C6D2D9;
+    padding: 0 1.4286rem;
+    margin-bottom: 0;
+    font-size: var(--font-size-s);
+    color: #999;
+    background-color: #e4eaee;
+    min-height: 40px;
+    justify-content: center;
+}
+
+.t-heading {
+    align-items: center!important;
+    display: flex!important;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .8571rem;
+    font-weight: 400;
+}
+.t-heading > div {
+    position: relative;
+    display: block;
+    min-height: 1.5rem;
+}
+.t-heading > div:last-child {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .8571rem;
+    font-weight: 400;
+}
